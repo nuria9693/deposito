@@ -6,6 +6,10 @@ public class CCuenta {
     private String cuenta;
     private double saldo;
     private double tipoInterés;
+    
+    /**
+     * representación de cuenta
+     */
 
     public CCuenta()
     {
@@ -19,7 +23,10 @@ public class CCuenta {
     }
     
     
-
+/**
+ * devuelve el nombre 
+ * @return NOMBRE
+ */
     public String getNombre() {
 		return nombre;
 	}
@@ -51,12 +58,19 @@ public class CCuenta {
 	public void setTipoInterés(double tipoInterés) {
 		this.tipoInterés = tipoInterés;
 	}
-
+/**
+ * devuelve el estado de la cuenta 
+ * @return saldo de la cuenta
+ */
 	public double estado()
     {
         return saldo;
     }
-
+/**
+ *  Indica que no se puede ingresas cantidad negativa 
+ * @param cantidad
+ * @throws Exception
+ */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
